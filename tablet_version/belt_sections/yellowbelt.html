@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Syllabus Center Online</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/jquery.touchSwipe.js"></script>
+	</head>
+	<body>
+        <script id='code_1'>
+				$(function() {			
+					$("#test2").swipe( { 
+                        swipeLeft:swipe1, allowPageScroll:"auto", 
+                        swipeRight:swipe2, allowPageScroll:"auto"});
+                    
+					//Moving to Next Screen
+					function swipe1(event, direction, distance, duration, fingerCount) {
+						window.location.href='greenbelt.html';
+					}
+                    
+                    //Moving to Previous Screen
+                    function swipe2(event, direction, distance, duration, fingerCount) {
+						window.location.href='../aboutapp.html';
+					}
+                    threshold: 1000
+				});
+        </script>
+<div id="test2">
+    <!-- One -->
+			<section id="one" class="wrapper style2 special">
+				<div class="inner">
+                    <div class="box">
+                        <img src="../../images/yellow.png" width="295px">
+                        <h1 class="headertitle">Yellow Belt <br> 9th Kyu</h1>
+                        <p class="meaning">A Yellow Belt is about the first beams of sunlight which shines upon the seed giving it new strength with the beginning of new life</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">Start Lesson</a></li>
+							</ul>
+				    </div>
+                </div>
+                <br>
+                <p class="help"><img src="../../images/back.png" width="10px">--Swipe Left or Right--<img src="../../images/next.png" width="10px"></p>
+                    </section>
+</div>
+		<!-- Scripts -->
+			<script src="../../assets/js/skel.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+
+	</body>
+</html>
